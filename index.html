@@ -19,9 +19,6 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Typing animation style -->
-    <link href="css/typing.css" rel="stylesheet">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
@@ -29,90 +26,23 @@
 
     <script src="js/circles.js" type="text/javascript"></script>
 
-    <script src="js/typed.js" type="text/javascript"></script>
-
     <link href="css/main.css" rel="stylesheet" />
 
     <link href="css/custom.css" rel="stylesheet" />
 
-    <script>
-      $(function(){
-          $('#description').typed({
-              // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
-              strings: ["a Tech Entrepreneur.", "a STEMinist.", "a Violin Player.", "a Speecher/Debater.", "Carol."],
-              typeSpeed: 60,
-              backDelay: 400,
-              loop: false,
-              contentType: 'text', // or text
-              // defaults to false for infinite loop
-              loopCount: false,
-              callback: function(){
-                lift();
-              }
-          });
-      });
-      function lift(){
-          $(".head-text").addClass("lift-text");
-      }
-    </script>
-    <script type="text/javascript">
-        function myFunction() {
-            if( $(".buttons:not(:last-child)").css('opacity') == 1) {
-                $(".buttons:not(:last-child)").css({
-                    width: '40px',
-                    height: '40px',
-                    margin: '20px auto 0',
-                    opacity: 0,
-                    '-webkit-transform': 'translateY(50px)',
-                    '-ms-transform': 'translateY(50px)',
-                    transform: 'translateY(50px)',
-                    'pointer-events': 'none',
-                    cursor: 'default'
-                });
-                $(".buttons:nth-last-child(1)").css({
-                    backgroundColor: '#ECCDFA',
-                		opacity: 0.7,
-                	  filter: 'alpha(opacity=70)'
-                });
-            }
-            else {
-                $(".buttons:not(:last-child)").css({
-                    opacity: 1,
-                    '-webkit-transform': 'none',
-                    '-ms-transform': 'none',
-                    transform: 'none',
-                    margin: '15px auto 0',
-                    'pointer-events': 'auto',
-                    cursor: 'pointer'
-                });
-                $(".buttons:nth-last-child(1)").css({
-                    backgroundColor: '#ECCDFA',
-                		opacity: 1.0,
-                	  filter: 'alpha(opacity=100)'
-                });
-            }
-        }
-    </script>
     <link rel="icon" href="images/customicon.png">
   </head>
 
   <body>
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
-        <div class="center">
-          <a href="#who"><div class="bookmark bookmark-after b1"><p class="vertical-text">ABOUT</p></div></a>
-          <a href="#experience"><div class="bookmark bookmark-after b2"><p class="vertical-text">EXPERIENCES</p></div></a>
-          <a href="#projects"><div class="bookmark bookmark-after b3"><p class="vertical-text">PROJECTS</p></div></a>
-          <a href="#hobbies"><div class="bookmark bookmark-after b4"><p class="vertical-text">HOBBIES</p></div></a>
-        </div>
-        <div class="container">
+        <div class="container night">
         <h1>CAROL WANG</h1>
         <div class="circle-bar">
           <a href="https://www.linkedin.com/in/carolwang2000" target="_blank" class="buttons"></a>
           <a href="https://github.com/carolw21" target="_blank" class="buttons"></a>
           <a href="https://www.facebook.com/carol.wang.77398" target="_blank" class="buttons"></a>
-          <a href="https://twitter.com/carolwang23" target="_blank" class="buttons"></a>
-          <a href="http://www.quora.com/Carol-Wang-9" target="_blank" class="buttons"></a>
+          <a href="https://www.instagram.com/carolwang.23/" target="_blank" class="buttons"></a>
           <span class="stretch"></span>
         </div>
         <hr class="line">
@@ -121,394 +51,41 @@
       </div>
     </div>
 
-    <div id="main">
+    <div id="main" style="height:100vh">
     <div id="who">
       <div class="container homepage">
-        <h2>ABOUT</h2>
-        <hr>
-        <div class="head-text">
-          <h1 class="text">I'm <span id="description"></span></h1>
-          <p class="subtext">Tech Entrepreneur, STEMinist, Music Enthusiast, Speecher/Debater, Lifelong Learner</p>
+        <h2 class="color">ABOUT</h2>
+        <hr class="color">
+        <div class="wrapper">
+        <img class="personimg" src="https://media.licdn.com/dms/image/C4E03AQHBgr8LkT4Mjg/profile-displayphoto-shrink_200_200/0?e=1564012800&v=beta&t=w4kNbVzIKAve1A9JulE7_M3L2Gf0qCZtxp81p083k8k" />
+        <h1 style="position:relative" class="text">I'm a dreamer/tech enthusiast who delves into things head first. When it comes to what I care about, I tend to be overly optimistic and ambitious. I love to fall into different rabbit holes, and constantly seek inspiration/laughter. Some causes I deeply care about are accessible education and equal rights. In my free time, you can catch me listening/singing to music, playing violin, researching life hacks, browsing design inspiration, running, or exploring new coffee shops.</h>
         </div>
-        <div class="aboutwrapper">
-          <div class="activities">
-            <h3>ACTIVITES</h3>
-            <ul>
-              <li class="p1">
-                <p style="line-height:2em;padding-left:10px;"><strong>Computer Science</strong></p></li>
-              <ul>
-                <li>Web/App Developer</li>
-                <li>Hackathon Organizer and Participant</li>
-                <li>Competitive Programming</li>
-                <li>CS/Technovation Club President</li>
-              </ul>
-              <li class="p2"><p style="line-height:2em;padding-left:10px;"><strong>Tutoring/Teaching</strong></p></li>
-              <ul>
-                <li>Online Tutor for Impoverished Students in LA</li>
-                <li>Code Coach at theCoderSchool</li>
-                <li>AP Computer Science TA</li>
-                <li>Private Java/Scratch Tutor</li>
-              </ul>
-              <li class="p3"><p style="line-height:2em;padding-left:10px;"><strong>Violin</strong></p></li>
-              <ul>
-                <li>Associate Concertmaster of Chamber Orchestra</li>
-                <li>Leader of Violin/Viola Group</li>
-                <li>Member of Performing Quartet</li>
-              </ul>
-              <li class="p4"><p style="line-height:2em;padding-left:10px;"><strong>Advocacy</strong></p></li>
-              <ul>
-                <li>ProjectCSGirls Program Development Team</li>
-                <li>Technovation Participant and Club Leader</li>
-                <li>Nadya Okamoto's City Council Campaign Promoting National Youth Empowerment</li>
-                <li>YMCA Annual Campaign for Families in Need</li>
-              </ul>
-            </ul>
+
+        <a class="bulb-light">
+          <div id="light"></div>
+
+          <div id="bulb">
+            <div class="bulb-top">
+              <div class="reflection"></div>
+            </div>
+            <div class="bulb-middle-1"></div>
+            <div class="bulb-middle-2"></div>
+            <div class="bulb-middle-3"></div>
+            <div class="bulb-bottom"></div>
           </div>
-          <div class="skills">
-            <h3>SKILLS</h3>
 
-            <div class="skillbar clearfix " data-percent="90%">
-            	<div class="skillbar-title" style="background: #ff6961;"><span>Java</span></div>
-            	<div class="skillbar-bar" style="background: #ffb3ba;"></div>
-            	<div class="skill-bar-percent">90%</div>
-            </div> <!-- End Skill Bar -->
-
-            <div class="skillbar clearfix " data-percent="86%">
-            	<div class="skillbar-title" style="background: #ffa500;"><span>HTML5/CSS3</span></div>
-            	<div class="skillbar-bar" style="background: #ffdfba;"></div>
-            	<div class="skill-bar-percent">86%</div>
-            </div> <!-- End Skill Bar -->
-
-            <div class="skillbar clearfix " data-percent="80%">
-            	<div class="skillbar-title" style="background: #ffff7f;"><span>Javascript</span></div>
-            	<div class="skillbar-bar" style="background: #ffffba;"></div>
-            	<div class="skill-bar-percent">80%</div>
-            </div> <!-- End Skill Bar -->
-
-            <div class="skillbar clearfix " data-percent="78%">
-            	<div class="skillbar-title" style="background: #99fa76;"><span>Swift</span></div>
-            	<div class="skillbar-bar" style="background: #baffc9;"></div>
-            	<div class="skill-bar-percent">78%</div>
-            </div> <!-- End Skill Bar -->
-
-            <div class="skillbar clearfix " data-percent="70%">
-            	<div class="skillbar-title" style="background: #66b2ff;"><span>Python</span></div>
-            	<div class="skillbar-bar" style="background: #bae1ff;"></div>
-            	<div class="skill-bar-percent">70%</div>
-            </div> <!-- End Skill Bar -->
-
-            <div class="skillbar clearfix " data-percent="64%">
-            	<div class="skillbar-title" style="background: #b19cd9;"><span>Android</span></div>
-            	<div class="skillbar-bar" style="background: #c7b8e4;"></div>
-            	<div class="skill-bar-percent">64%</div>
-            </div> <!-- End Skill Bar -->
-
-            <div class="skillbar clearfix " data-percent="59%">
-            	<div class="skillbar-title" style="background: #f3b6cf;"><span>Illustrator</span></div>
-            	<div class="skillbar-bar" style="background: #ffe5ee;"></div>
-            	<div class="skill-bar-percent">59%</div>
-            </div> <!-- End Skill Bar -->
-
+          <div id="base">
+            <div class="screw-a"></div>
+            <div class="screw-b"></div>
+            <div class="screw-a"></div>
+            <div class="screw-b"></div>
+            <div class="screw-a"></div>
+            <div class="screw-b"></div>
           </div>
-        </div>
-        <div class="beliefs">
-          <h3>WHAT I ADVOCATE</h3>
-          <ul>
-            <li><p><strong>Gender Equality</strong></p></li>
-            <li><p><strong>Education for All</strong></p></li>
-            <li><p><strong>Tech for Social Good</strong></p></li>
-            <li><p><strong>Youth Empowerment</strong></p></li>
-          </ul>
-        </div>
-        <!--<div class="colimages2">
-          <img class="image" src="images/hackathon/1.jpg" />
-          <img class="image" src="images/speech/1.jpg" />
-          <img class="image" src="images/Violin/7.jpg" />
-          <img class="image" src="images/WWDC16/3.jpg" />
-          <img class="image" src="images/hackathon/2.jpg" />
-          <img class="image" src="images/Martian/3.jpg" />
-        </div>-->
+        </a>
+
       </div>
     </div>
-
-    <div id="experience">
-      <div class="container homepage">
-        <!-- Example row of columns -->
-        <h2>EXPERIENCES</h2>
-        <hr>
-        <div class="box">
-          <div class="top">
-            <img class="pic" src="images/Other/roboterra.png" />
-            <img class=arrow src="images/Other/right.png" />
-            <p>Software Engineering Intern at Roboterra <p class="full"></p></p>
-          </div>
-          <div class="bottom">
-            <p class="long">The experience I gained as a software engineering was invaluable, as I got to improve my technical skills, through learning languages and new concepts, and enhance my collaboration skills, through working in a team with college interns from Wesleyan and Stanford. We first completed a website compiling internal resources for the company, providing a centralized spot for employees to access files organized by location and department. The website can be found <a href="http://i.roboterra.com">here</a>. Afterwards, we focused on the CastleRock application, which is a part of the Robotics Kit product. I worked on various aspects of the virtual robot, such as the layout of components and styling of icons. Through these two projects, I learned ReactJS and Redux, as well as CSS and JQuery. In addition, I learned good practices for how to contribute to projects through Bitbucket and familiarized myself with how a project is managed, through processes of delegation and code review before pushing into production.</p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="top">
-            <img class="pic" src="images/hackathon/4.jpg" />
-            <img class=arrow src="images/Other/right.png" />
-            <p>a16z Battle of the Hacks Participant with TreeHacks <p class="full"></p></p>
-          </div>
-          <div class="bottom">
-            <p class="long">This hackathon in June 2016 was held at the Andreesen Horowitz Firm in Menlo Park, and was designed to provide the organizers of hackathons at various colleges across the U.S. an opportunity to hack. I was invited as a high schooler to join the Stanford TreeHacks Team. It was such a great learning experience as I took part in the brainstorming process, coding process, and the presentation. Our project, called TabShifter, was created to increase efficiency and organization, serving as a Google Chrome extension to shift and color-code tabs based on content. I learned about tf-idf, a machine learning concept that allows you to determine how similar words are to each other. In addition, I learned about how to make a request from Javascript to a Python function using a simple Python server. However, I learned the most from the wonderful TreeHacks team, as I got to witness their fun team dynamic, brilliant ideas, and way of completing a project on a time crunch.</p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="top">
-            <img class="pic" src="images/WWDC16/15.jpg" />
-            <img class=arrow src="images/Other/right.png" />
-            <p>WWDC16 Scholar <p class="full"></p></p>
-          </div>
-          <div class="bottom">
-            <p class="long">I feel so blessed to have been awarded this selective scholarship after Apple engineers reviewed an iOS app I made at Girls Who Code. The conference allowed me to get help from numerous Apple engineers with the app I was developing, learn new features in XCode and how to use them (CocoaTouch, InterfaceBuilder, Swift 3), and meet people I really admire (Tim Cook and other young entrepreneurs). I went away with so much more knowledge and excitement for developing new technologies, as well as many new connections with other driven, passionate individuals who want to make a change. In addition, I was truly inspired by Apple's large emphasis on design and I aspire to create applications that meet Apple's high standards. (Apple Design Awards - here I come!)</p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="top">
-            <img class="pic" src="images/friends/1.jpg" />
-            <img class=arrow src="images/Other/right.png" />
-            <p>2016 Technovation Challenge Semifinalist <p class="full"></p></p>
-          </div>
-          <div class="bottom">
-            <p class="long">The Technovation Challenge encourages girls to find a problem in their community and attempt to solve it through an app and business plan. Although it was my second year participating in the challenge and extremely difficult to fit into my junior year workload, it was an intense, but rewarding experience. In the end, my partner, Ruoyun, and I finished a working prototype, which we pitched at the Regional Pitch Event held at Yahoo. The pitch event was beneficial in that we got the chance to demo what we had built and get valuable feedback. We made it to the semifinals and continued developing the app in the hopes that it would help many students all over the United States.</p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="top">
-            <img class="pic" src="images/Other/usaco.jpg" />
-            <img class=arrow src="images/Other/right.png" />
-            <p>USACO Gold Rank <p class="full"></p></p>
-          </div>
-          <div class="bottom">
-            <p class="long">USACO is an international programming contest that involves algorithms and data structures. Everyone starts off at the Bronze level and participate in the monthly contests in order to be promoted to the next level. I started preparing for the contests in 9th grade, but faced faced great difficulty. However, gradually with a shift in my thinking, accumulation of algorithmic concepts, and lots of practice, I finally ascended to the Silver Rank. In 11th grade, I was promoted to the Gold Rank after attending a course which taught many useful algorithms and data structures, including Djikstra’s and Depth-first-search.</p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="top">
-            <img class="pic" src="images/Other/hackingedu.jpg" />
-            <img class=arrow src="images/Other/right.png" />
-            <p>HackingEDU Operations Coordinator and Lead Organizer of MVHacks <p class="full"></p></p>
-          </div>
-          <div class="bottom">
-            <p class="long"><span style="font-family:'Comfortaa';font-weight:bold;color:black">HackingEDU</span> is an organization that hosts the largest hackathon every year with more than 1000 attendees. I joined the organization because I really believe in their cause and mission of connecting students with mentors and providing a platform for innovation, social good and education. I joined the operations team, which plans out event logistics and works with other teams (marketing, sponsorship) to ensure the event runs successfully. So far, since I joined in March 2015, I have helped plan the March training day, specifically by learning about contacting mentors, scheduling mock interview sessions, and taking care of catering.</p>
-            <p class="long">  I have attended various <span style="font-family:'Comfortaa';font-weight:bold;color:black">hackathons</span> starting in the second half of 10th grade when I was simply fascinated with the concept of such an event. Through attending hackathons like HS Hacks and Gunn Hacks, I gained more knowledge about the event format and what it takes to guarantee a good event experience. I became the manager of MVHacks for 2016-2017, representing our high school. MVHacks will be held August 2017, and we will have secured $10k in funds, which took sending more than 1,000 emails to potential sponsors on my part.</p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="top">
-            <img class="pic" src="images/Other/mvcs.png" />
-            <img class=arrow src="images/Other/right.png" />
-            <p>President of Computer Science Club and Technovation Club <p class="full"></p></p>
-          </div>
-          <div class="bottom">
-            <p class="long">In 11th grade, I became the first female president of the <span style="font-family:'Comfortaa';font-weight:bold;color:black">Computer Science Club</span>. I proposed a new format of having monthly topic explorations accompanied by a mini contest (with legitimate prizes!). In addition to the weekly lessons on the various topics, we held USACO training days on a separate day in order to expand our reach. In 12th grade, we continued experimenting with structure and topics, covering interesting, current topics such as Machine Learning and Internet of Things.</p>
-            <p class="long">  I joined the <span style="font-family:'Comfortaa';font-weight:bold;color:black">Technovation Club</span> in 10th grade, as I was very interested in the combination of business and programming. I participated in the challenge and learned a lot from the time-consuming process of app development, as I served the main developer. In 11th grade, I served as the programming lead of the club and helped teach lessons in Java and XCode. In addition, I participated in the challenge myself, this time with much more experience. Technovation events were definitely a highlight of 2016, as they supported the cause of girls in technology and innovation. In 12th grade, as the President of the club, I helped foster an encouraging, inspiring, and tight-knit community of passionate girls, because I truly appreciate the value in a supportive community. I feel so blessed to have had such a platform to spread the cause and help empower other girls.</p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="top">
-            <img class="pic" src="images/Other/school.jpg" />
-            <img class=arrow src="images/Other/right.png" />
-            <p>School on Wheels Tutor and Code Coach at theCoderSchool <p class="full"></p></p>
-          </div>
-          <div class="bottom">
-            <p class="long">I have been a tutor with <span style="font-family:'Comfortaa';font-weight:bold;color:black">School on Wheels</span> since the summer of 2015 and it has been such a pleasure working with every single student I have had so far. My goal is to help these children fix the holes in their fundamentals and help them build their self confidence. I know that every single child has the ability to achieve a better future, as long as they have the right resources and guidance. With every class, I strive to connect with these children as individuals, which often means cutting class time to play games with the younger children, in hopes that they can associate learning with positive feelings. I really enjoy seeing their progress and helping them learn, and my experiences with School on Wheels have also helped me learn a lot. I hope to continue mentoring a lot of these children in similar situations, and hope that I can truly make a positive impact.</p>
-            <p class="long">  I started teaching at <span style="font-family:'Comfortaa';font-weight:bold;color:black">theCoderSchool</span> the summer of 2016 and have had a great time working with students through private and group sessions. Through teaching them Java, Python, or HTML/CSS/Javascript, my ability to empathize has strengthened and I am more able to express concepts clearly and be flexible with my teaching. I really hope to start my own platform for children to learn CS education in an accessible, encouraging, and project-based way.</p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="top">
-            <img class="pic" src="images/GWC/1.jpg" />
-            <img class=arrow src="images/Other/right.png" />
-            <p>Girls Who Code 2015 Summer Pilot Program at VMWare <p class="full"></p></p>
-          </div>
-          <div class="bottom">
-            <p class="long">This program was the first ever Girls Who Code Summer Program for girls with APCS experience, so I was really lucky to have had the opportunity. It was a great experience working at VMWare, meeting many inspiring female figures in the tech industry, and getting to know the 19 other girls better over the course of 4 weeks. The community I became a part of still benefits me to this day, and I really value the support system Girls Who Code provides. I worked on a project in a team of 5, and it was a good learning experience collaborating with others to brainstorm an app idea, learning how to implement an idea, and dealing with issues during development. The graduation ceremony was a bittersweet, but joyous time as we got to finally pitch and showcase our finished product. </p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="top">
-            <img class="pic" src="images/speech/3.jpg" />
-            <img class=arrow src="images/Other/right.png" />
-            <p>Speech and Debate Tournaments at Berkeley, Santa Clara, James Logan <p class="full"></p></p>
-          </div>
-          <div class="bottom">
-            <p class="long">When I was in 9th grade, I attended Debate tournaments with the Speech and Debate Club at my school. As a timid freshman, the club really gave me a sense of belonging and provided me a way to showcase the assertive side of my rather reserved personality, as I was an intense, unrestrained LD Debater. In 10th, I wanted to experiment with speech and did OO. However, after doing OO at a few tournaments, I decided it wasn't for me, so I switched to Impromptu. I always had difficulty coming up with a lot to say on the spot, so it seemed like an unlikely choice, but turned out to be extremely fun. I continued pursuing Impromptu in 11th grade, which has helped me so much in general at different occasions.The Santa Clara University Invitational in 2015 was a turning point for me, as I was recognized for my improvement when I got into the semifinals, which came as a surprise to me. I got another semifinal award at Santa Clara in 2016, and came to fully appreciate the value of these tournaments as a prime opportunity to network with a diverse group of passionate, driven, opinionated individuals.</p>
-          </div>
-        </div>
-        <div class="box" style="margin-bottom:26px">
-          <div class="top">
-            <img class="pic" src="images/Violin/5.jpg" />
-            <img class=arrow src="images/Other/right.png" />
-            <p>Associate Concertmaster of Chamber Orchestra and Leader of Violin/Viola Group<p class="full"></p></p>
-          </div>
-          <div class="bottom">
-            <p class="long">Playing the violin allows me to express a whole different side of me and serves as a much-needed creative outlet and form of expression. In addition to playing solos at my teacher's biannual recitals, I played in a group with other violin/viola students, working my way up the groups. I have been the leader of the advanced group since 9th grade and it has been a great experience learning how to lead a group. I also became the Associate Concertmaster of my school’s Chamber Orchestra in 12th grade. These experiences have helped me develop a certain sense of awareness in terms of unity and balance within the group, as the different parts have to come together even when rhythms and keys are different. Violin will always be a hobby, and I really hope others enjoy the beauty of music as much as I do.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="projects">
-      <div class="container homepage">
-        <!-- Example row of columns -->
-        <h2>PROJECTS</h2>
-        <hr>
-        <div id="carousel" class="carousel slide" data-ride="carousel">
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-              <div class="item active">
-                <img class="peek" src="images/projects/degreebee.png">
-                <h2>degreebee</h2>
-                <p>Skills: Android (Android Studio), Swift (XCode), Firebase, Google Apps Script (Google Drive API Integration)</p>
-                <p class="small">The app aims to facilitate the college and future planning process, as it compiles useful information of majors, colleges, jobs, and references to serve as a starting point for research. The typical search process can be tedious without the centralization of information sources, when future planning should be exciting. I coded the app while my partner took care of the marketing and logo design. In addition, I partnered with a few companies in order to get the most relevant data in our app and I wrote a script in order to add their large amounts of data into the Firebase database, which dynamically feeds data into the app. I also included the option for users to save the information to a Google Drive file, as I wanted the app to directly allow the user to compile a list of what they are interested in for further research. This app made it to the semifinals of the Technovation challenge and the website walking through the app's features can be found <a class="bluea" target="_blank" href="https://degreebee.org">here</a>. It is on Android and iTunes in order to make it as accessible as possible!</p>
-              </div>
-
-              <div class="item">
-                <img class="peek" src="images/projects/pictoword.png">
-                <h2>Pic-to-Word</h2>
-                <p>Skills: Swift (XCode), Google Apps Script (Google Drive API Integration), Google Tesseract OCR (Character Recognition), Matlab (Machine Learning)</p>
-                <p class="small">This app utilizes Optical Character Recognition to convert text from images to digital text, allowing the user to further process that text and upload it to Google Drive as a document. It was something I really needed in school and I thought it would bring much-needed convenience others. In order to more deeply understand the algorithm, as I was using the Tesseract API, I took Andrew Ng's Machine Learning Course on Coursera, learning various methods and how to use Matlab. Currently, the Tesseract does not produce very reliable results, even with many different image processing techniques. It is most accurate for typed text, such as in books and newspaper. However, I hope that one day I can write my own machine learning algorithm in order to produce accurate results for handwritten text.
-              </div>
-
-              <div class="item">
-                <img class="peek" src="images/projects/pocketcheck.png">
-                <h2>Pocket Check</h2>
-                <p>Skills: Swift (XCode), Google Tesseract OCR (Character Recognition)</p>
-                <p class="small">This app is a financial budgeting app that keeps track of receipts and total spending amounts by spending categories. It was developed during the 4 week Girls Who Code Summer Immersion Program at VMWare with a team of 4 others. I served as the main programmer, as I was really determined to learn Swift and XCode. Users can add entries, and we even included Tesseract OCR in an attempt to make it more convenient for users to enter the necessary information. The app also includes visuals, breaking down the spendings by categories, which are denoted by nice-looking pastel colors. There is also the option to set a budget and a calendar to see which days users have spent money on. User accounts and data were all stored in Parse database. It can be found on Github <a class="bluea" target="_blank" href="https://github.com/HipHipArr/PocketCheck">here</a>.
-              </div>
-
-              <div class="item">
-                <span class="fa-stack fa-4x">
-                  <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-                  <i class="fa fa-music fa-stack-1x" style="color:white"></i>
-                </span>
-                <h2>Learn Music Theory</h2>
-                <p>Skills: Java</p>
-                <p class="small">This game is meant to help students remember the sharps and flats in all major and minor scales in a fun little game. It was started in my 9th grade Java class and later improved over the summer. The player controls this panda to collect food items, shields, coins, while avoiding the trash items. The user has to collect a certain amount of points before advancing to the next level. Every 15 seconds, the game will be paused and a music theory question will be asked in a multiple choice format. The player has to get it right before they can continue with the game. If they get 5 wrong, the game is over and they can review the wrong questions. The coins can be used to purchase new cute characters from the store. I hope to develop it as an app to help children learn basic music theory, as I myself have lots of trouble memorizing the sharps and flats of scales. The code for the game can be found on Github <a class="bluea" target="_blank" href="https://github.com/carolw21/Music-Theory-Game">here</a> (although it is very disorganized as I hadn't used git before) and it can played by downloading the jar file <a class="bluea" href="./MusicTheoryGame.jar">here</a>.</p>
-              </div>
-
-              <div class="item">
-                <img class="peek" src="images/projects/clubhub.png">
-                <h2>ClubHub</h2>
-                <p>Skills: HTML/CSS, Javascript, JQuery (PhoneGap)</p>
-                <p class="small">This app was developed for the Technovation Challenge in 2015. It strives to create a form of streamlined communication from clubs to members. Users can sign up for an account as either a club leader of member, and leaders send notifications to all of their members, keeping an archive of their past notifications, as well as all their members. Members can add different clubs with the convenient search function and receive notifications. In addition, there is a calendar for further organizational purposes. It can be found on Github <a class="bluea" target="_blank" href="https://github.com/carolw21/ClubHub">here</a>.</p>
-              </div>
-
-              <div class="item">
-                <span class="fa-stack fa-4x">
-                  <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-                  <i class="fa fa-gamepad fa-stack-1x" style="color:white"></i>
-                </span>
-                <h2>Find Your Way</h2>
-                <p>Skills: Java</p>
-                <p class="small">This little game was made at HS Hacks II, the first hackathon I ever went to. It was made with my friend, Mohini Banerjee, at a time when the only language I knew well back then was Java. I tried to incorporate the game into a website hosted by Microsoft Azure, but that did not end up working in the time we had. This game involves the user trying to navigate a small penguin safely to the portal while avoiding falling blocks and trying to collect the fish. The game can be played by downloading the jar file <a class="bluea" href="./FindYourWay.jar" download>here</a>.</p>
-              </div>
-            </div>
-
-
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#carousel" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel" data-slide-to="1"></li>
-              <li data-target="#carousel" data-slide-to="2"></li>
-              <li data-target="#carousel" data-slide-to="3"></li>
-              <li data-target="#carousel" data-slide-to="4"></li>
-              <li data-target="#carousel" data-slide-to="5"></li>
-            </ol>
-
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-
-          </div>
-      </div>
-    </div>
-
-    <div id="hobbies">
-      <div class="container homepage">
-        <!-- Example row of columns -->
-        <h2>HOBBIES</h2>
-        <hr>
-        <div class='circle-container'>
-          <div class="content">
-          	<img class="pic center" src='images/hobbies/me.jpg'>
-          </div>
-          <div class="content">
-        	   <img class='pic deg0' src='http://groundsounds.com/wp-content/uploads/2014/07/artworks-000083309109-ahb99a-t500x500.jpg'>
-             <div class="post-content deg02">
-
-                <h3>Music</h3>
-                <p>Lana Del Rey, Chance the Rapper, Zella Day, Kendrick Lamar, MIA, Frank Ocean, Twenty Pilots, Itzhak Perlman.</p>
-
-            </div>
-          </div>
-          <div class="content">
-        	   <img class='pic deg45' src='http://d2i7hmnf1hrt1b.cloudfront.net/wp-content/uploads/2016/03/Naked-Pressed-Juice-4.jpg'>
-             <div class="post-content deg452">
-
-                <h3>Food</h3>
-                <p>Acai Bowls. Sushi. Sandwiches. Mint chocolate chip. Baked broccoli. Overnight oatmeal. Exploring veganism.</p>
-
-            </div>
-          </div>
-          <div class="content">
-        	   <img class='pic deg135' src='images/Other/brain.jpg'>
-             <div class="post-content deg1352">
-
-                <h3>Anatomy</h3>
-                <p>I am a huge fan of the TV show Bones, which led me to become fascinated with the human body.</p>
-
-            </div>
-          </div>
-          <div class="content">
-            <img class='pic deg180' src='images/Other/10.jpg'>
-            <div class="post-content deg1802">
-
-                <h3>Tech Products</h3>
-                <p>My favorites are my typewriter mechanical keyboard, folding book lamp, gold-tip dual charger.</p>
-
-            </div>
-          </div>
-          <div class="content">
-            <img class='pic deg225' src='http://a3.mzstatic.com/us/r30/Music5/v4/b2/c4/9e/b2c49e5e-bac1-2ed1-1a3b-530b49e6f6e7/cover170x170.jpeg'>
-            <div class="post-content deg2252">
-
-                <h3>TV Shows</h3>
-                <p>Black Mirror, Silicon Valley, Shark Tank, Prison Break, New Girl, Fresh Off the Boat, Unreal, Bones, and Touch.</p>
-
-            </div>
-          </div>
-          <div class="content">
-            <img class='pic deg315' src='http://imgsrc.hubblesite.org/hu/db/images/hs-2004-32-d-thumb.jpg'>
-            <div class="post-content deg3152">
-
-                <h3>Astrophysics</h3>
-                <p>Ever since I watched Interstellar, I have been extremely fascinated with space exploration. Wormholes!</p>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <a href="#" class="scrollup">Scroll</a>
-
-    <script>
-    	$('.carousel').carousel({
-    		interval: 12000
-    	})
-    </script>
-    </div>
+  </div>
   </body>
 </html>

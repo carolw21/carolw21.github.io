@@ -1,4 +1,137 @@
 $(document).ready(function () {
+    var link = document.createElement('a');
+  	link.setAttribute("style", "position:absolute;color:white;font-family:'Quicksand';font-size:16px;visibility:hidden;");
+    link.setAttribute('href', 'https://ieeexplore.ieee.org/abstract/document/8320349');
+    link.setAttribute('target', '_blank');
+    link.innerHTML = "Why isn't voting online?";
+  	document.getElementById("who").appendChild(link);
+    var link2 = document.createElement('a');
+  	link2.setAttribute("style", "position:absolute;color:white;font-family:'Quicksand';font-size:16px;visibility:hidden;");
+    link2.setAttribute('href', 'https://www.scientificamerican.com/article/follow-up-what-exactly-is/');
+    link2.setAttribute('target', '_blank');
+    link2.innerHTML = "Enigma of Wormholes";
+  	document.getElementById("who").appendChild(link2);
+    var link3 = document.createElement('a');
+  	link3.setAttribute("style", "position:absolute;color:white;font-family:'Quicksand';font-size:16px;visibility:hidden;");
+    link3.setAttribute('href', 'https://www.youtube.com/watch?v=8cvhwquPqJ0');
+    link3.setAttribute('target', '_blank');
+    link3.innerHTML = "Conditioning the mind: Wim Hoff";
+  	document.getElementById("who").appendChild(link3);
+    var link4 = document.createElement('a');
+    link4.setAttribute("style", "position:absolute;color:white;font-family:'Quicksand';font-size:16px;visibility:hidden;");
+    link4.setAttribute('href', 'https://www.youtube.com/playlist?list=PLxavoEPHsuiAEmgKVRc3X2MT07UPz0vb8');
+    link4.setAttribute('target', '_blank');
+    link4.innerHTML = "Trance of Tame Impala";
+    document.getElementById("who").appendChild(link4);
+    var link5 = document.createElement('a');
+    link5.setAttribute("style", "position:absolute;color:white;font-family:'Quicksand';font-size:16px;visibility:hidden;");
+    link5.setAttribute('href', 'https://www.world-of-lucid-dreaming.com/10-dreams-that-changed-the-course-of-human-history.html');
+    link5.setAttribute('target', '_blank');
+    link5.innerHTML = "Dream-induced Inspiration";
+    document.getElementById("who").appendChild(link5);
+    var link6 = document.createElement('a');
+    link6.setAttribute("style", "position:absolute;color:white;font-family:'Quicksand';font-size:16px;visibility:hidden;");
+    link6.setAttribute('href', 'https://trackly.com/blog/hacking-productivity-with-the-8020-paretos-principle');
+    link6.setAttribute('target', '_blank');
+    link6.innerHTML = "80/20 Principle";
+    document.getElementById("who").appendChild(link6);
+    var link7 = document.createElement('a');
+    link7.setAttribute("style", "position:absolute;color:white;font-family:'Quicksand';font-size:16px;visibility:hidden;");
+    link7.setAttribute('href', 'http://freakonomics.com/podcast/creativity-2/');
+    link7.setAttribute('target', '_blank');
+    link7.innerHTML = "Where does creativity come from?";
+    document.getElementById("who").appendChild(link7);
+    var link8 = document.createElement('a');
+    link8.setAttribute("style", "position:absolute;color:white;font-family:'Quicksand';font-size:16px;visibility:hidden;");
+    link8.setAttribute('href', 'https://www.parkwestgallery.com/browse-artwork/gallery/thomas-kinkade');
+    link8.setAttribute('target', '_blank');
+    link8.innerHTML = "Kinkade's Artistic Vision";
+    document.getElementById("who").appendChild(link8);
+    $('.bulb-light').click(function() {
+      $('body').toggleClass('night');
+      if ($('body').hasClass('night')) {
+        $('.container').css({
+          'font-family': 'Quicksand',
+      		'background-color': '#333',
+      		'height': '100%',
+      		'-webkit-transition': '-webkit-background-color 0.6s ease-in-out',
+          'transition': 'background-color 0.1s ease-in-out',
+      		'text-align': 'center'
+        });
+        $('.text').css({
+          'color': '#333',
+      		'-webkit-transition': '-webkit-color 0.5s ease-in-out',
+          'transition': 'color 0.5s ease-in-out'
+        });
+        $('.personimg').css({
+          'visibility': 'hidden',
+      		'-webkit-transition': '-webkit-visibility 0.1s ease-in-out',
+          'transition': 'visibility 0.1s ease-in-out'
+        });
+        $('.color').css({
+          'visibility': 'hidden',
+          '-webkit-transition': '-webkit-visibility 0s ease-in-out',
+          'transition': 'visibility 0s ease-in-out'
+        });
+        link.setAttribute("style", "position:absolute;color:white;font-family:'Quicksand';font-size:16px;visibility:visible;");
+        link2.setAttribute("style", "position:absolute;color:white;font-family:'Quicksand';font-size:16px;visibility:visible;");
+        link3.setAttribute("style", "position:absolute;color:white;font-family:'Quicksand';font-size:16px;visibility:visible;");
+        link4.setAttribute("style", "position:absolute;color:white;font-family:'Quicksand';font-size:16px;visibility:visible;");
+        link5.setAttribute("style", "position:absolute;color:white;font-family:'Quicksand';font-size:16px;visibility:visible;");
+        link6.setAttribute("style", "position:absolute;color:white;font-family:'Quicksand';font-size:16px;visibility:visible;");
+        link7.setAttribute("style", "position:absolute;color:white;font-family:'Quicksand';font-size:16px;visibility:visible;");
+        link8.setAttribute("style", "position:absolute;color:white;font-family:'Quicksand';font-size:16px;visibility:visible;");
+        var xy = getRandomPosition(link);
+      	link.style.top = xy[1][0] + 'px';
+      	link.style.left = xy[0][0] + 'px';
+      	link2.style.top = xy[1][1] + 'px';
+      	link2.style.left = xy[0][1] + 'px';
+      	link3.style.top = xy[1][2] + 'px';
+      	link3.style.left = xy[0][2] + 'px';
+        link4.style.top = xy[1][3] + 'px';
+        link4.style.left = xy[0][3] + 'px';
+        link5.style.top = xy[1][4] + 'px';
+        link5.style.left = xy[0][4] + 'px';
+        link6.style.top = xy[1][5] + 'px';
+        link6.style.left = xy[0][5] + 'px';
+        link7.style.top = xy[1][6] + 'px';
+        link7.style.left = xy[0][6] + 'px';
+        link8.style.top = xy[1][7] + 'px';
+        link8.style.left = xy[0][7] + 'px';
+      } else {
+        $('.container').css({
+          'font-family': 'Quicksand',
+          'background-color': 'white',
+          'height': '100%',
+          '-webkit-transition': '-webkit-background-color 0.6s ease-in-out',
+          'transition': 'background-color 0.6s ease-in-out',
+          'text-align': 'center'
+        });
+        $('.text').css({
+          'color': '#9696fd',
+      		'-webkit-transition': '-webkit-color 0.5s ease-in-out',
+          'transition': 'color 0.5s ease-in-out'
+        });
+        $('.personimg').css({
+          'visibility': 'visible',
+      		'-webkit-transition': '-webkit-visibility 0.5s ease-in-out',
+          'transition': 'visibility 0.5s ease-in-out'
+        });
+        $('.color').css({
+          'visibility': 'visible',
+      		'-webkit-transition': '-webkit-visibility 0.5s ease-in-out',
+          'transition': 'visibility 0.5s ease-in-out'
+        });
+        link.setAttribute("style", "position:absolute;color:white;font-family:'Quicksand';font-size:16px;visibility:hidden;");
+        link2.setAttribute("style", "position:absolute;color:white;font-family:'Quicksand';font-size:16px;visibility:hidden;");
+        link3.setAttribute("style", "position:absolute;color:white;font-family:'Quicksand';font-size:16px;visibility:hidden;");
+        link4.setAttribute("style", "position:absolute;color:white;font-family:'Quicksand';font-size:16px;visibility:hidden;");
+        link5.setAttribute("style", "position:absolute;color:white;font-family:'Quicksand';font-size:16px;visibility:hidden;");
+        link6.setAttribute("style", "position:absolute;color:white;font-family:'Quicksand';font-size:16px;visibility:hidden;");
+        link7.setAttribute("style", "position:absolute;color:white;font-family:'Quicksand';font-size:16px;visibility:hidden;");
+        link8.setAttribute("style", "position:absolute;color:white;font-family:'Quicksand';font-size:16px;visibility:hidden;");
+      }
+    });
     $('.scrollup').fadeOut();
     $('.box').siblings().find('.bottom').slideUp();
     $('.skillbar').each(function(){
@@ -201,3 +334,23 @@ $(document).ready(function () {
       });
     });
 });
+
+function getRandomPosition(element) {
+  var nums = new Array();
+  var nums2 = new Array();
+  for(var i = 15; i <= $(window).width() - element.clientWidth - 10; i += 15){
+    if (!(i > $(window).width()/2 - 75 - element.clientWidth && i < $(window).width()/2 + 75))
+      nums.push(i);
+  }
+  for(var i = 15; i <= $(window).height() - element.clientHeight - 10; i += 30){
+      nums2.push(i + 740);
+  }
+  nums = shuffle(nums);
+  nums2 = shuffle(nums2);
+	return [nums, nums2];
+}
+
+function shuffle(o) {
+    for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+    return o;
+};
