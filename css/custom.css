@@ -8,7 +8,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		margin-top: 12%;
+		padding-top: 25vh;
 }
 
 .jumbotron h1 {
@@ -464,8 +464,8 @@ body, .bulb-top, .bulb-bottom {
 }
 
 .wrapper {
-	width: 70%;
-	margin-left: 15%;
+	width: 90%;
+	margin-left: 5%;
 }
 
 #who h3 {
@@ -832,11 +832,11 @@ h2 {
 
 #who {
 		background-color: white;
-		height: 100vh;
+		height: 99vh;
 		border: 10px solid rgb(253, 253, 150);
 		border: 10px solid rgba(253, 253, 150,0.4);
 		-webkit-background-clip: padding-box; /* for Safari */
-    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+		background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
 }
 
 #experience {
@@ -1103,8 +1103,19 @@ h2 {
 		height: 140px;
 	}
 
+	.wrapper {
+		width: 90%;
+		margin-left: 5%;
+	}
+
 	.personimg {
 		float: none;
+		width: 100px;
+		height: 100px;
+	}
+
+	#who h1 {
+		font-size: 16px;
 	}
 
 	.section p{
@@ -1287,6 +1298,9 @@ h2 {
 	}
 }
 : 140vh;
+	}
+}
+
 	}
 }
 
