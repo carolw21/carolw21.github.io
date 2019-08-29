@@ -70,20 +70,11 @@
 }
 
 .buttons {
-  box-shadow: 0px 5px 11px -2px rgba(0, 0, 0, 0.18),
-              0px 4px 12px -7px rgba(0, 0, 0, 0.15);
-  border-radius: 50%;
   display: inline-block;
-  width: 56px;
-  height: 56px;
+  height: 50px;
+	margin-left: 4px;
+	margin-right: 4px;
   position: relative;
-}
-
-.buttons:active,
-.buttons:focus,
-.buttons:hover {
-  box-shadow: 0 0 4px rgba(0,0,0,.14),
-    0 4px 8px rgba(0,0,0,.28);
 }
 
 .night { background: #333; }
@@ -325,31 +316,6 @@ body, .bulb-top, .bulb-bottom {
 .night .bulb-middle-2 {	border-top: 50px solid #FE3; }
 .night .bulb-middle-3 {	border-top: 30px solid #FE3; }
 
-.buttons:not(:last-child):nth-last-child(2) {
-  background-image: url('https://ultimatemember.com/wp-content/uploads/bb-plugin/cache/instagram-circle.png');
-  background-size: contain;
-}
-
-.buttons:not(:last-child):nth-last-child(3) {
-  background-image: url('http://cbwconline.com/IMG/Facebook-Flat.png');
-  background-size: contain;
-}
-
-.buttons:not(:last-child):nth-last-child(4) {
-  background-image: url('http://png-5.findicons.com/files/icons/2779/simple_icons/64/github_64_black.png');
-  background-size: contain;
-}
-
-.buttons:not(:last-child):nth-last-child(5) {
-  background-image: url('http://www.njsacc.org/wordpress/wp-content/uploads/transparent-Linkedin-logo-icon.png');
-  background-size: contain;
-}
-
-.buttons:not(:last-child):nth-last-child(6) {
-  background-image: url('../images/Other/Gmail.png');
-  background-size: contain;
-}
-
 .center {
 	margin-left: auto;
 	margin-right: auto;
@@ -501,7 +467,7 @@ body, .bulb-top, .bulb-bottom {
 		margin-top: 2px;
 		margin-bottom: 0px;
 		font-size: 30px;
-		font-family: 'Kalam', cursive;
+		font-family: 'Quicksand';
 		-webkit-transition: all 0.7s ease-in-out;
 		-moz-transition: all 0.7s ease-in-out;
 		-o-transition: all 0.7s ease-in-out;

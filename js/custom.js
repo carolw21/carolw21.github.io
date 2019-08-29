@@ -48,9 +48,9 @@ $(document).ready(function () {
     link8.innerHTML = "Kinkade's Artistic Vision";
     document.getElementById("who").appendChild(link8);
     $('.bulb-light').click(function() {
-      $('body').toggleClass('night');
-      if ($('body').hasClass('night')) {
-        $('.container').css({
+      $('#main').toggleClass('night');
+      if ($('#main').hasClass('night')) {
+        $('.homepage').css({
           'font-family': 'Quicksand',
       		'background-color': '#333',
       		'height': '100%',
@@ -99,7 +99,7 @@ $(document).ready(function () {
         link8.style.top = xy[1][7] + 'px';
         link8.style.left = xy[0][7] + 'px';
       } else {
-        $('.container').css({
+        $('.homepage').css({
           'font-family': 'Quicksand',
           'background-color': 'white',
           'height': '100%',
@@ -338,12 +338,12 @@ $(document).ready(function () {
 function getRandomPosition(element) {
   var nums = new Array();
   var nums2 = new Array();
-  for(var i = 15; i <= $(window).width() - element.clientWidth - 10; i += 15){
+  for(var i = 25; i <= $(window).width() - element.clientWidth - 20; i += 15){
     if (!(i > $(window).width()/2 - 75 - element.clientWidth && i < $(window).width()/2 + 75))
       nums.push(i);
   }
-  for(var i = 15; i <= $(window).height() - element.clientHeight - 10; i += 30){
-      nums2.push(i + 740);
+  for(var i = 15; i <= $(window).height() - element.clientHeight - 20; i += 30){
+      nums2.push(i + 750);
   }
   nums = shuffle(nums);
   nums2 = shuffle(nums2);
