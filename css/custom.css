@@ -1,29 +1,57 @@
-.jumbotron {
-		text-align: center;
-		height: 100vh;
-		margin-bottom: 0px;
-		font-family: 'Quicksand', sans-serif;
-		font-weight: 300;
-		background-color: white;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		padding-top: 25vh;
+.adjacent {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
 }
 
-.jumbotron h1 {
-		font-family: 'Comfortaa', sans-serif;
-		font-size: 70px;
-		margin-top: 30px;
+.link {
+	font-size: 16px;	
 }
 
-.jumbotron p{
-	display: inline-block;
+.excerpt {
+	visibility: hidden;
+	position: absolute;
+	text-align: left;
+	width: 380px;
+	line-height: 3vh;
 	font-size: 16px;
-	font-weight: 600;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
-.jumbotron a {
-		text-decoration: none;
+
+.name {
+	color: #333;
+}
+
+.circle-bar * {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+a:link {
+	cursor: pointer;
+	text-decoration: none;
+	color: #666;
+}
+
+a:visited {
+	cursor: pointer;
+	text-decoration: none;
+	color: #666;
+}
+
+a:hover {
+	cursor: pointer;
+	text-decoration: none;
+	color: #d3d3d3;
+}
+
+a:active {
+	cursor: pointer;
+	text-decoration: none;
+	color: #d3d3d3;
 }
 
 .stretch {
@@ -44,8 +72,9 @@
 }
 
 .homepage h2{
-	padding-top: 30px;
 	font-size: 33px;
+	margin-left: 40px;
+	margin-right: 40px;
 }
 
 .homepage h3{
@@ -81,7 +110,10 @@
 
 .bulb-light {
   width: 150px;
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border: 0;
   background: transparent;
   margin: 0 auto !important;
@@ -424,7 +456,7 @@ body, .bulb-top, .bulb-bottom {
 
 #who h1 {
 	font-size: 23px;
-	color: #9696fd;
+	color: #333;
 	margin-bottom: 20px;
 	text-align: justify;
 }
@@ -437,7 +469,7 @@ body, .bulb-top, .bulb-bottom {
 #who h3 {
 	font-family: 'Comfortaa', sans-serif;
 	font-size: 18px;
-	color: #9966cc;
+	color: #333;
 	margin-top: 16px;
 }
 
@@ -458,7 +490,7 @@ body, .bulb-top, .bulb-bottom {
 }
 
 #who .homepage hr{
-	border-top: 1px solid black;
+	border-top: 1px solid #333;
 	width: 116px;
 	padding-bottom: 10px;
 }
@@ -797,10 +829,9 @@ h2 {
 }
 
 #who {
+		position: relative;
 		background-color: white;
-		height: 99vh;
-		border: 10px solid rgb(253, 253, 150);
-		border: 10px solid rgba(253, 253, 150,0.4);
+		height: 90vh;
 		-webkit-background-clip: padding-box; /* for Safari */
 		background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
 }

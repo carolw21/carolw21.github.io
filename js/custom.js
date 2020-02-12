@@ -48,8 +48,8 @@ $(document).ready(function () {
     link8.innerHTML = "Kinkade's Artistic Vision";
     document.getElementById("who").appendChild(link8);
     $('.bulb-light').click(function() {
-      $('#main').toggleClass('night');
-      if ($('#main').hasClass('night')) {
+      $('#who').toggleClass('night');
+      if ($('#who').hasClass('night')) {
         $('.homepage').css({
           'font-family': 'Quicksand',
       		'background-color': '#333',
@@ -69,6 +69,11 @@ $(document).ready(function () {
           'transition': 'visibility 0.1s ease-in-out'
         });
         $('.color').css({
+          'visibility': 'hidden',
+          '-webkit-transition': '-webkit-visibility 0s ease-in-out',
+          'transition': 'visibility 0s ease-in-out'
+        });
+        $('.link').css({
           'visibility': 'hidden',
           '-webkit-transition': '-webkit-visibility 0s ease-in-out',
           'transition': 'visibility 0s ease-in-out'
@@ -122,6 +127,11 @@ $(document).ready(function () {
       		'-webkit-transition': '-webkit-visibility 0.5s ease-in-out',
           'transition': 'visibility 0.5s ease-in-out'
         });
+        $('.link').css({
+          'visibility': 'visible',
+      		'-webkit-transition': '-webkit-visibility 0.5s ease-in-out',
+          'transition': 'visibility 0.5s ease-in-out'
+        });
         link.setAttribute("style", "position:absolute;color:white;font-family:'Quicksand';font-size:16px;visibility:hidden;");
         link2.setAttribute("style", "position:absolute;color:white;font-family:'Quicksand';font-size:16px;visibility:hidden;");
         link3.setAttribute("style", "position:absolute;color:white;font-family:'Quicksand';font-size:16px;visibility:hidden;");
@@ -131,6 +141,30 @@ $(document).ready(function () {
         link7.setAttribute("style", "position:absolute;color:white;font-family:'Quicksand';font-size:16px;visibility:hidden;");
         link8.setAttribute("style", "position:absolute;color:white;font-family:'Quicksand';font-size:16px;visibility:hidden;");
       }
+    });
+    $('.abt').click(function() {
+      $('.bulb-light *').css({
+        'visibility': 'hidden',
+        '-webkit-transition': '-webkit-visibility 0.1s ease-in-out',
+        'transition': 'visibility 0.1s ease-in-out'
+      });
+      $('.excerpt').css({
+        'visibility': 'visible',
+        '-webkit-transition': '-webkit-visibility 0.5s ease-in-out',
+        'transition': 'visibility 0.5s ease-in-out'
+      });
+    });
+    $('.name').click(function() {
+      $('.bulb-light *').css({
+        'visibility': 'visible',
+        '-webkit-transition': '-webkit-visibility 0.5s ease-in-out',
+        'transition': 'visibility 0.5s ease-in-out'
+      });
+      $('.excerpt').css({
+        'visibility': 'hidden',
+        '-webkit-transition': '-webkit-visibility 0.1s ease-in-out',
+        'transition': 'visibility 0.1s ease-in-out'
+      });
     });
     $('.scrollup').fadeOut();
     $('.box').siblings().find('.bottom').slideUp();
@@ -338,12 +372,12 @@ $(document).ready(function () {
 function getRandomPosition(element) {
   var nums = new Array();
   var nums2 = new Array();
-  for(var i = 25; i <= $(window).width() - element.clientWidth - 20; i += 15){
+  for(var i = 35; i <= $(window).width() - element.clientWidth - 50; i += 15){
     if (!(i > $(window).width()/2 - 75 - element.clientWidth && i < $(window).width()/2 + 75))
       nums.push(i);
   }
-  for(var i = 15; i <= $(window).height() - element.clientHeight - 20; i += 30){
-      nums2.push(i + 750);
+  for(var i = 45; i <= $(window).height() - 2*element.clientHeight - 50; i += 60){
+      nums2.push(i);
   }
   nums = shuffle(nums);
   nums2 = shuffle(nums2);
